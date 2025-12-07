@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_light">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Judul -->
+        <TextView
+            android:id="@+id/titleForm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Form Mata Kuliah"
+            android:textSize="22sp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/primaryBlue"
+            android:layout_gravity="center"/>
+
+        <!-- Nama Matkul -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Mata Kuliah"
+            android:textColor="@color/primaryBlue"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/etNamaMatkul"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittext_outline"
+            android:padding="12dp"
+            android:hint="Masukkan nama matkul" />
+
+        <!-- Hari / Tanggal -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hari / Tanggal"
+            android:textColor="@color/primaryBlue"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/etTanggal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittext_outline"
+            android:padding="12dp"
+            android:hint="Contoh: Senin, 3 Juni 2025" />
+
+        <!-- Pertemuan Ke -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pertemuan Ke-"
+            android:textColor="@color/primaryBlue"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"/>
+
+        <EditText
+            android:id="@+id/etPertemuan"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/edittext_outline"
+            android:padding="12dp"
+            android:hint="Contoh: 7" />
+
+        <!-- Tombol -->
+        <Button
+            android:id="@+id/btnGenerate"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="32dp"
+            android:text="simpan"
+            android:textColor="@color/backgroundWhite"
+            android:textStyle="bold"
+            android:backgroundTint="@color/primaryBlue" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "674192074430",
+    "project_id": "absensiqr-d7717",
+    "storage_bucket": "absensiqr-d7717.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:674192074430:android:bb10833c522b8594a0e0ef",
+        "android_client_info": {
+          "package_name": "com.example.absensiqr"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCM9dc0C1o6qUBTDh6721iPDn0nbqw1NJ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_start"
+    android:padding="20dp"
+    tools:context=".MahasiswaMainActivity">
+
+    <!-- AppBar -->
+    <TextView
+        android:id="@+id/tvWelcomeMahasiswa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Halo Mahasiswa!"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/text_primary"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- CARD UTAMA: Scan QR -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardScan"
+        android:layout_width="0dp"
+        android:layout_height="170dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="5dp"
+        app:strokeWidth="0dp"
+        app:layout_constraintTop_toBottomOf="@id/tvWelcomeMahasiswa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="28dp"
+        android:backgroundTint="@color/primary_light">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="20dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/ic_qr"
+                app:tint="@color/primary" />
+
+            <Button
+                android:id="@+id/btnScanQR"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Scan QR Absensi"
+                android:textAllCaps="false"
+                android:layout_marginTop="14dp"
+                app:cornerRadius="12dp"
+                app:backgroundTint="@color/primary"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- Tombol kecil: Riwayat Absen -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnRiwayatAbsen"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:text="Riwayat Absen"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:layout_marginTop="24dp"
+        app:cornerRadius="12dp"
+        app:strokeColor="@color/primary"
+        app:strokeWidth="1dp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:textColor="@color/primary"
+        app:layout_constraintTop_toBottomOf="@id/cardScan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

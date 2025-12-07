@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/start_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:background="@drawable/bg_start"
+    tools:context=".StartActivity">
+
+    <!-- Logo / Icon -->
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="80dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- App name -->
+    <TextView
+        android:id="@+id/tvAppName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="AbsensiQR"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/text_primary"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/ivLogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Subtitle / tagline -->
+    <TextView
+        android:id="@+id/tvSubtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Masuk untuk memulai absensi"
+        android:textSize="14sp"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/text_secondary"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/tvAppName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Buttons container -->
+    <LinearLayout
+        android:id="@+id/llButtons"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="64dp">
+
+        <!-- Login (primary) -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogin"
+            style="@style/Widget.MaterialComponents.Button"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="16sp"
+            app:cornerRadius="12dp"
+            app:strokeWidth="0dp"
+            app:iconPadding="8dp"
+            app:backgroundTint="@color/primary"/>
+
+        <!-- Register (outline) -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRegister"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:text="Daftar"
+            android:textAllCaps="false"
+            android:fontFamily="sans-serif"
+            android:textSize="16sp"
+            app:cornerRadius="12dp"
+            app:strokeColor="@color/primary"
+            app:strokeWidth="1dp"
+            android:textColor="@color/primary"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
